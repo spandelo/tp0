@@ -91,7 +91,7 @@ void leer_consola(t_log* logger)
 	while (1) {
 		linea = readline("> ");
 
-		if (!linea) {
+		if (strcmp(linea, "") == 0) {
 			break;
 		}
 
@@ -113,7 +113,7 @@ void paquete(int conexion)
 	while (1) {
 		leido = readline("> ");
 
-		if (!leido) {
+		if (strcmp(leido, "") == 0) {
 			break;
 		}
 
